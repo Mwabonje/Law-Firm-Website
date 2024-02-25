@@ -21,9 +21,41 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 .navbar {
-    background-color:#FDF0D5;
+  background-color: #fdf0d5;
+}
+/* Dropdown menu */
+.dropdown-menu {
+    background: transparent; /* Set background to transparent */
+    border: none !important; /* Remove border */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1) !important; 
 }
 
+/* Sub-links */
+.dropdown-menu .dropdown-item {
+    color: #000; /* Text color */
+}
+
+.dropdown-menu .dropdown-item:hover, 
+.dropdown-menu .dropdown-item:focus {
+    background-color: #fdf0d5; /* Hover background color */
+}
+
+/* Hide sub-links by default */
+.dropdown-menu {
+    display: none;
+}
+
+/* Show sub-links on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+
+.logo {
+  color: #1d170f;
+}
 /* home section */
 .home {
   background-image: url(img/Untitled-1.jpg);
@@ -39,19 +71,19 @@ body {
   padding-top: 50px;
 }
 .home-content {
-    width: 85vw;
+  width: 85vw;
   margin: 0 auto;
   margin-top: 10rem;
   color: #fff;
 }
 .home h1 {
-    font-size: 50px;
+  font-size: 50px;
 }
 .home-content a button {
   padding: 10px 20px;
   font-size: 1.1rem;
-  background-color: #FDF0D5;
-  color: black;
+  background-color: #b69665;
+  color: white;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -105,4 +137,153 @@ body {
   }
 }
 
-/* Add more media queries as needed for other screen sizes */
+/* Practice-Area */
+.bg-color {
+  background-color: #f4ede0;
+}
+.practice-area {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center; /* Center-align the content horizontally */
+  /* background-color: #878483;  */
+  padding: 50px; /* Adjust padding as needed */
+  width: 85vw;
+  margin: 0 auto;
+}
+.btn button {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background-color: #b69665;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about {
+  flex: 0 1 50%;
+  /* text-align: center; */
+  margin-bottom: 30px; /* Add some space between the about section and the content */
+  /* background-color: white; */
+}
+
+.about-content {
+  flex: 0 1 50%; /* Take up 50% of the available width */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center content horizontally */
+}
+
+.content {
+  flex: 0 1 calc(40% - 20px); /* Make each content block flexible with a width of 40% minus margin */
+  margin: 10px; /* Add some margin around each content block */
+  /* text-align: center; */
+}
+
+.content img {
+  width: 100px; /* Adjust image width as needed */
+  height: 100px; /* Adjust image height as needed */
+  margin-bottom: 10px; /* Add some space below the image */
+  /* width: 10%; */
+}
+
+.content h1 {
+  font-size: 20px; /* Adjust heading font size as needed */
+  margin-bottom: 10px; /* Add some space below the heading */
+}
+
+.content p {
+  font-size: 16px; /* Adjust paragraph font size as needed */
+}
+
+@media screen and (max-width: 576px) {
+  /* Media query targeting screens with a maximum width of 576px */
+
+  .practice-area {
+    flex-direction: column; /* Change flex-direction to column for smaller screens */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .about {
+    width: 100%; /* Make each about section take up full width */
+    margin-bottom: 20px; /* Add spacing between each about section */
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-content {
+    flex-direction: column; /* Change flex-direction to column for smaller screens */
+    align-items: center; /* Center align content horizontally */
+  }
+
+  .content {
+    width: 90%; /* Make each content block take up 90% of the available width */
+    margin: 10px auto; /* Center-align each content block and add margin */
+    text-align: center; /* Center-align text within content block */
+  }
+}
+
+  .expertise {
+    background-color: #f9f9f9; /* Light gray background color */
+    padding: 50px 0; /* Add some padding to the top and bottom */
+    /* background-image: url(img/background3-image.jpg); */
+     background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7) 100%,
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(img/background4-image.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+  }
+
+  .expertise .heading {
+    text-align: center; /* Center align the heading */
+    margin-bottom: 30px; /* Add some bottom margin */
+  }
+
+ .expertise .areas {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    max-width: 800px;
+    margin: 0 auto; /* Center the container horizontally */
+    
+  }
+
+  .expertise .areas-1 {
+    text-align: center; /* Center align the areas */
+    max-width: 200px; /* Limit the width */
+    margin: 15px; /* Add margin around each area */
+    border: 0.7px solid #ccc; /* Add border with desired color */
+    padding: 15px; /* Add padding inside the border */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+.areas-1 img {
+        filter: brightness(0) saturate(100%) invert(93%) sepia(0%) saturate(7246%) hue-rotate(160deg) brightness(100%) contrast(108%);
+        font-size: 1.1rem;
+      }
+  /* Media query to adjust layout on smaller screens */
+  @media (min-width: 768px) {
+    .expertise .areas {
+      flex-direction: row; /* Switch to horizontal layout */
+      flex-wrap: wrap; /* Allow wrapping */
+    }
+
+    .expertise .areas-1 {
+      flex: 0 0 calc(50% - 30px); /* Set flex basis for half width */
+    }
+  }
+  .expertise .areas-1 img {
+    width: 100px; /* Adjust the image width */
+    height: 100px; /* Adjust the image height */
+    margin-bottom: 15px; /* Add some bottom margin */
+  }
+
