@@ -25,33 +25,30 @@ body {
 }
 /* Dropdown menu */
 .dropdown-menu {
-    background: transparent; /* Set background to transparent */
-    border: none !important; /* Remove border */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1) !important; 
+  background: transparent; /* Set background to transparent */
+  border: none !important; /* Remove border */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1) !important;
 }
 
 /* Sub-links */
 .dropdown-menu .dropdown-item {
-    color: #000; /* Text color */
+  color: #000; /* Text color */
 }
 
-.dropdown-menu .dropdown-item:hover, 
+.dropdown-menu .dropdown-item:hover,
 .dropdown-menu .dropdown-item:focus {
-    background-color: #fdf0d5; /* Hover background color */
+  background-color: #fdf0d5; /* Hover background color */
 }
 
 /* Hide sub-links by default */
 .dropdown-menu {
-    display: none;
+  display: none;
 }
 
 /* Show sub-links on hover */
 .nav-item.dropdown:hover .dropdown-menu {
-    display: block;
+  display: block;
 }
-
-
-
 
 .logo {
   color: #1d170f;
@@ -141,14 +138,15 @@ body {
 .bg-color {
   background-color: #f4ede0;
 }
+
 .practice-area {
   display: flex;
   /* flex-direction: column; */
   align-items: center; /* Center-align the content horizontally */
   /* background-color: #878483;  */
   padding: 50px; /* Adjust padding as needed */
-  width: 85vw;
-  margin: 0 auto;
+  /* width: 85vw;
+  margin: 0 auto; */
 }
 .btn button {
   padding: 10px 20px;
@@ -228,62 +226,171 @@ body {
   }
 }
 
-  .expertise {
-    background-color: #f9f9f9; /* Light gray background color */
-    padding: 50px 0; /* Add some padding to the top and bottom */
-    /* background-image: url(img/background3-image.jpg); */
-     background-image: linear-gradient(
+.expertise {
+  background-color: #f9f9f9; /* Light gray background color */
+  padding: 50px 0; /* Add some padding to the top and bottom */
+  /* background-image: url(img/background3-image.jpg); */
+  background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.7) 100%,
       rgba(0, 0, 0, 0.2)
     ),
     url(img/background4-image.jpg);
-    background-position: center;
-    background-size: cover;
-    color: white;
-  }
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
 
-  .expertise .heading {
-    text-align: center; /* Center align the heading */
-    margin-bottom: 30px; /* Add some bottom margin */
-  }
+.expertise .heading {
+  text-align: center; /* Center align the heading */
+  margin-bottom: 30px; /* Add some bottom margin */
+}
 
- .expertise .areas {
-    display: flex; /* Use flexbox */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
-    max-width: 800px;
-    margin: 0 auto; /* Center the container horizontally */
-    
+.expertise .areas {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  max-width: 800px;
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.expertise .areas-1 {
+  text-align: center; /* Center align the areas */
+  max-width: 200px; /* Limit the width */
+  margin: 15px; /* Add margin around each area */
+  border: 0.7px solid #ccc; /* Add border with desired color */
+  padding: 15px; /* Add padding inside the border */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+.areas-1 img {
+  filter: brightness(0) saturate(100%) invert(93%) sepia(0%) saturate(7246%)
+    hue-rotate(160deg) brightness(100%) contrast(108%);
+  font-size: 1.1rem;
+}
+/* Media query to adjust layout on smaller screens */
+@media (min-width: 768px) {
+  .expertise .areas {
+    flex-direction: row; /* Switch to horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping */
   }
 
   .expertise .areas-1 {
-    text-align: center; /* Center align the areas */
-    max-width: 200px; /* Limit the width */
-    margin: 15px; /* Add margin around each area */
-    border: 0.7px solid #ccc; /* Add border with desired color */
-    padding: 15px; /* Add padding inside the border */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    flex: 0 0 calc(50% - 30px); /* Set flex basis for half width */
   }
-.areas-1 img {
-        filter: brightness(0) saturate(100%) invert(93%) sepia(0%) saturate(7246%) hue-rotate(160deg) brightness(100%) contrast(108%);
-        font-size: 1.1rem;
-      }
-  /* Media query to adjust layout on smaller screens */
-  @media (min-width: 768px) {
-    .expertise .areas {
-      flex-direction: row; /* Switch to horizontal layout */
-      flex-wrap: wrap; /* Allow wrapping */
-    }
+}
+.expertise .areas-1 img {
+  width: 100px; /* Adjust the image width */
+  height: 100px; /* Adjust the image height */
+  margin-bottom: 15px; /* Add some bottom margin */
+}
 
-    .expertise .areas-1 {
-      flex: 0 0 calc(50% - 30px); /* Set flex basis for half width */
-    }
-  }
-  .expertise .areas-1 img {
-    width: 100px; /* Adjust the image width */
-    height: 100px; /* Adjust the image height */
-    margin-bottom: 15px; /* Add some bottom margin */
-  }
+/* contact form */
+.background-color {
+  background-color: black;
+  position: relative;
+  padding: 5rem;
+  /* border-radius: 20px; */
+}
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 20px;
+  background-color: #fdf0d5;
+  width: 80vw;
+  margin: 0 auto;
+  border-radius: 20px;
+}
 
+.contact-content {
+  flex: 1;
+  background-color: #b69665;
+  color: black;
+  padding: 5rem;
+  /* border-radius: 20px; */
+}
+
+.contact-content h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-content p {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* .contact-content form {
+  max-width: 400px;
+} */
+
+.contact-content label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-content input,
+.contact-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.contact-content button[type="submit"] {
+  background-color: black;
+  color: #fff;
+  border: 2px solid white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+.contact-content button[type="submit"]:hover {
+  background-color: white;
+  color: #1d170f;
+}
+
+.get-intouch {
+  flex: 1;
+  background-color: none;
+  color: black;
+  padding: 10rem;
+}
+
+.get-intouch h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-phone,
+.contact-email,
+.contact-twitter,
+.contact-fb {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-phone img,
+.contact-email img,
+.contact-twitter img,
+.contact-fb img {
+  margin-right: 10px;
+  width: 30px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px;
+}
+
+.contact-phone p,
+.contact-email p,
+.contact-twitter p,
+.contact-fb p {
+  margin: 0;
+  font-size: 16px;
+}
