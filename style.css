@@ -123,14 +123,14 @@ body {
 @media screen and (max-width: 576px) {
   /* CSS rules for screens up to 576px wide */
   .home {
-    min-height: 70vh; /* Adjust min-height for smaller screens */
+    min-height:60vh; /* Adjust min-height for smaller screens */
   }
   .home-content {
     width: 90vw; /* Adjust width for smaller screens */
-    margin-top: 8rem; /* Adjust margin-top for smaller screens */
+    margin-top: 5rem; /* Adjust margin-top for smaller screens */
   }
   .home h1 {
-    font-size: 32px; /* Adjust font-size for smaller screens */
+    font-size: 30px; /* Adjust font-size for smaller screens */
   }
 }
 
@@ -239,6 +239,7 @@ body {
   background-position: center;
   background-size: cover;
   color: white;
+  
 }
 
 .expertise .heading {
@@ -274,6 +275,7 @@ body {
     flex-direction: row; /* Switch to horizontal layout */
     flex-wrap: wrap; /* Allow wrapping */
   }
+  
 
   .expertise .areas-1 {
     flex: 0 0 calc(50% - 30px); /* Set flex basis for half width */
@@ -308,7 +310,7 @@ body {
   margin-top: 15rem;
 }
 .contact-content {
-  background-color: #b69665;
+  background-color: #fdf0d5;
  border-radius: 20px;
 }
 .contact-form .get-intouch,
