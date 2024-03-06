@@ -21,7 +21,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 .navbar {
-  background-color: #fdf0d5;
+  background-color: white;
 }
 /* Dropdown menu */
 .dropdown-menu {
@@ -55,13 +55,13 @@ body {
 }
 /* home section */
 .home {
-  background-image: url(img/Untitled-1.jpg);
-  /* background-image: linear-gradient(
+  /* background-image: url(img/background5-image.jpg); */
+  background-image: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.7) 3%,
+      rgba(0, 0, 0, 0.7) 2%,
       rgba(0, 0, 0, 0.2)
     ),
-    url(img/background-image.jpg); */
+    url(img/background6-image.jpg);
   background-position: center;
   background-size: cover;
   min-height: 40vw;
@@ -130,7 +130,10 @@ body {
     margin-top: 5rem; /* Adjust margin-top for smaller screens */
   }
   .home h1 {
-    font-size: 30px; /* Adjust font-size for smaller screens */
+    font-size: 25px; /* Adjust font-size for smaller screens */
+  }
+  .home p {
+    font-size: 13px; /* Adjust font-size for smaller screens */
   }
 }
 
@@ -165,7 +168,7 @@ body {
 
 .about {
   flex: 0 1 50%;
-  /* text-align: center; */
+  text-align: center;
   margin-bottom: 30px; /* Add some space between the about section and the content */
   /* background-color: white; */
 }
@@ -290,7 +293,7 @@ body {
 
 /* Contact-Form */
 .background-color {
-  background-color: #fdf0d5;
+  background-color: #f4ede0;;
   min-height: 20vw;
   position: relative;
 }
@@ -303,8 +306,8 @@ body {
   /* flex-direction: column; */
   /* align-items: center; */
   padding: 20px;
-  background-color: #f8f9fa;
-  border-radius: 10px;
+  background-color: #b69665;
+  /* border-radius: 10px; */
   width: 100vw;
   max-width: 900px; /* Optional: Adjust the maximum width as needed */
   margin-top: 15rem;
@@ -319,10 +322,13 @@ body {
   padding: 20px;
   width: 100%; /* Ensure inner content stretches */
 }
-
+.get-intouch {
+  color:black;
+}
 .contact-form h1 {
   font-size: 24px;
   margin-bottom: 15px;
+  
 }
 
 .contact-form .contact-phone,
@@ -332,6 +338,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  color:black;
 }
 
 .contact-form .contact-phone img,
@@ -340,6 +347,11 @@ body {
 .contact-form .contact-fb img {
   width: 20px;
   margin-right: 10px;
+  color:white;
+  /* filter: brightness(0) saturate(100%) invert(93%) sepia(0%) saturate(7246%)
+    hue-rotate(160deg) brightness(100%) contrast(108%); */
+     align-items: center;
+   
 }
 
 .contact-form input[type="text"],
