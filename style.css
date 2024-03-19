@@ -539,44 +539,7 @@ margin-top: 15rem;
   transition: all 0.4s ease;
   color: black;
 }
-/* Additional styling for the contact information */
-.contact p {
-  margin: 5px 0; /* Add margin to the contact paragraphs */
-}
-.col-2 {
-  /* background-color: #f0f0f0;  */
-  padding: 20px; /* Add padding for spacing */
-  margin-top: 2rem;
-  text-align: center;
-}
 
-.col-2 h3 {
-  color: white; /* Set the color of the heading */
-}
-
-.col-2 input[type="email"] {
-  width: 100%; /* Make the input field take up full width */
-  padding: 10px; /* Add padding for spacing */
-  margin-bottom: 10px; /* Add margin at the bottom for spacing */
-  border-radius: 30px;
-  background-color: white;
-  border: 2px solid white;
-  text-align: center;
-}
-
-.col-2 button {
-  background-color: #b69665; /* Set your desired button background color */
-  color: #fff; /* Set the text color of the button */
-  padding: 5px 10px; /* Add padding for spacing */
-  border: 2px solid white; /* Remove default button border */
-  cursor: pointer; 
-  border-radius: 30px;
-  background: transparent;
-}
-
-.col-2 button:hover {
-  background-color: #b69665; /* Change button background color on hover */
-}
 
 @media screen and (max-width: 768px) {
   .ftr {
@@ -589,14 +552,20 @@ margin-top: 15rem;
     text-align: center;
   }
 }
-.line {
+
+/* UNDERLINE */
+/* .line {
   background-color: white;
   padding:0.3px;
-  /* width: 80vw;
-  margin: 0 auto; */
-}
+  width: 80vw;
+  margin: 0 auto;
+} */
+/* END */
+
+
+/* FOOTER */
 footer {
-  background-color: #b69665;
+  background-color: white;
   color: black;
   text-align: center;
   padding: 5px;
@@ -611,4 +580,4 @@ footer {
   margin-top: 1rem;
   font-size: 12px;
 }
-
+/* END */
